@@ -1,0 +1,101 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900&display=swap');
+
+/* Set background gradient for the body */
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Noto Sans', 'Arial';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the form container */
+#form {
+    width: 450px; /* Increased width */
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 20px; /* Adjusted padding */
+    backdrop-filter: blur(10px); /* Apply blur effect to the backdrop */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the form heading */
+h1 {
+    text-align: center;
+    color: rgba(9,9,121,1);
+    margin-bottom: 15px; /* Adjusted margin */
+    font-size: 24px; /* Adjusted font size */
+}
+
+/* Style the submit button */
+#form button {
+    background-color: rgba(9,9,121,1);
+    color: white;
+    border: 1px solid rgba(9,9,121,1);
+    border-radius: 5px;
+    padding: 10px; /* Adjusted padding */
+    margin: 10px 0; /* Adjusted margin */
+    cursor: pointer;
+    font-size: 18px; /* Adjusted font size */
+    width: 100%;
+}
+
+/* Style the input groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px; /* Adjusted margin */
+}
+
+/* Style the input fields */
+.input-group input {
+    border-radius: 5px;
+    font-size: 16px; /* Adjusted font size */
+    margin-top: 5px; /* Adjusted margin */
+    padding: 8px; /* Adjusted padding */
+    border: 1px solid rgba(0,212,255,1);
+    transition: box-shadow 1s, outline 1s;
+}
+
+/* Remove outline on input focus */
+.input-group input:focus {
+    outline: 0;
+    box-shadow: 1px 2px 12px rgba(0,0,0,0.2);
+}
+
+/* Style error messages */
+.input-group .error {
+    color: rgb(242, 18, 18);
+    font-size: 12px; /* Adjusted font size */
+    margin-top: 3px; /* Adjusted margin */
+}
+
+/* Style input fields when valid */
+.input-group.success input {
+    border-color: #0cc477;
+}
+
+/* Style input fields when invalid */
+.input-group.error input {
+    border-color: rgb(206, 67, 67);
+}
+
+/* Add hover effect to the submit button */
+#form button {
+    border:1px solid rgba(9,9,121,1);
+    transition: background-color 1s, box-shadow 1s;
+}
+
+#form button:hover {
+    color: rgba(9,9,121,1);
+    border: 1px solid rgba(9,9,121,1);
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 12px rgba(0,0,0,0.2);
+}
